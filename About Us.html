@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Chips Waya Waya</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#f5deb3;
+            color:#333;
+        }
+
+        /* HEADER */
+
+        header{
+            background-color:#14532d;
+            padding:20px;
+            text-align:center;
+        }
+
+        .logo img{
+            width:90px;
+            height:80px;
+            border-radius:12px;
+            border:3px solid white;
+            margin-bottom:15px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        /* MAIN */
+
+        main{
+            padding:50px 20px;
+            text-align:center;
+        }
+
+        .about-container{
+            background-color:white;
+            max-width:1000px;
+            margin:auto;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:darkred;
+            font-size:45px;
+            margin-bottom:15px;
+        }
+
+        h2{
+            color:darkgreen;
+            font-size:30px;
+            margin-bottom:25px;
+        }
+
+        p{
+            font-size:19px;
+            line-height:1.8;
+            margin-bottom:25px;
+            text-align:justify;
+        }
+
+        .mission,
+        .vision{
+            background-color:#f0fff0;
+            padding:20px;
+            margin-top:20px;
+            border-left:6px solid darkgreen;
+            border-radius:10px;
+            text-align:left;
+        }
+
+        .mission h3,
+        .vision h3{
+            color:darkred;
+            margin-bottom:10px;
+            font-size:25px;
+        }
+
+        .about-image{
+            width:300px;
+            height:300px;
+            object-fit:cover;
+            border-radius:20px;
+            margin-top:30px;
+            border:5px solid darkgreen;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* FOOTER */
+
+        footer{
+            background-color:#14532d;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            h1{
+                font-size:35px;
+            }
+
+            h2{
+                font-size:24px;
+            }
+
+            p{
+                font-size:17px;
+            }
+
+            .about-container{
+                width:95%;
+                padding:25px;
+            }
+
+            .about-image{
+                width:90%;
+                height:auto;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="Images/7B88238C-96D8-4F66-98F6-1BE80C038338.jpeg" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <div class="about-container">
+
+            <h1><u>CHIPS WAYA WAYA</u></h1>
+
+            <h2>The Home Of Tasty</h2>
+
+            <p>
+                Chips Waya Waya is a popular fast-food business established in 2018,
+                located in the heart of Sky City, Alberton.
+                Founded by local entrepreneur Thabo Ndlovu,
+                the business started as a single mobile cart known for its perfectly
+                seasoned and crispy “Waya Waya” chips and the famous South African Kota.
+            </p>
+
+            <p>
+                Due to overwhelming community support and a reputation for generous portions,
+                bold flavours, and excellent service, the business expanded into a permanent
+                takeaway-focused storefront in 2022. Today, Chips Waya Waya continues to
+                provide delicious meals and a true kasi food experience to customers every day.
+            </p>
+
+            <!-- MISSION -->
+
+            <div class="mission">
+
+                <h3>Mission</h3>
+
+                <p>
+                    To serve the Sky City community with the most authentic,
+                    flavourful, and generously portioned Kota meals,
+                    prepared with fresh ingredients and served with pride.
+                </p>
+
+            </div>
+
+            <!-- VISION -->
+
+            <div class="vision">
+
+                <h3>Vision</h3>
+
+                <p>
+                    To become the most recognized and beloved fast-food brand
+                    in Alberton, expanding from a local gem into a multi-location
+                    business while maintaining the soul of its street-food origins.
+                </p>
+
+            </div>
+
+            <!-- IMAGE -->
+
+            <img src="Images/073334F6-7ECB-4FAC-95CD-A8E44C38F8E1.jpeg"
+                 class="about-image"
+                 alt="Chips Waya Waya Food">
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        &copy; ST10517088 | Chips Waya Waya
+    </footer>
+
+</body>
+
+</html>

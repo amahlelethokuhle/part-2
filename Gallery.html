@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Chips Waya Waya</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#f5deb3;
+        }
+
+        /* HEADER */
+
+        header{
+            background-color:#14532d;
+            padding:20px;
+            text-align:center;
+        }
+
+        .logo img{
+            width:90px;
+            height:80px;
+            border-radius:12px;
+            border:3px solid white;
+            margin-bottom:15px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        /* MAIN */
+
+        main{
+            padding:40px 20px;
+            text-align:center;
+        }
+
+        h1{
+            color:darkred;
+            font-size:45px;
+            margin-bottom:30px;
+        }
+
+        /* HERO IMAGE */
+
+        .hero-image{
+            width:100%;
+            height:450px;
+            object-fit:cover;
+            border-radius:15px;
+            margin-bottom:40px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* GALLERY */
+
+        .gallery-container{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        .gallery-container img{
+            width:300px;
+            height:250px;
+            object-fit:cover;
+            border-radius:15px;
+            border:4px solid white;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .gallery-container img:hover{
+            transform:scale(1.05);
+        }
+
+        /* FOOTER */
+
+        footer{
+            background-color:#14532d;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            h1{
+                font-size:35px;
+            }
+
+            .hero-image{
+                height:250px;
+            }
+
+            .gallery-container img{
+                width:90%;
+                height:auto;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="Images/7B88238C-96D8-4F66-98F6-1BE80C038338.jpeg" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <h1><u>Gallery</u></h1>
+
+        <!-- HERO IMAGE -->
+
+        <img src="Images/a.jpeg" class="hero-image" alt="Main Food Image">
+
+        <!-- GALLERY IMAGES -->
+
+        <div class="gallery-container">
+
+            <img src="Images/F14DA6B1-DABA-4EE2-BA99-DA9287BE4B92.jpeg" alt="Food Image">
+
+            <img src="Images/FDBB83A6-46DE-454A-A6DA-6CD443AF4EBD.jpeg" alt="Food Image">
+
+            <img src="Images/6FECE7CA-B0C9-4BFB-A16D-5F05DC1CA4B6.jpeg" alt="Food Image">
+
+            <img src="Images/AD52CC9F-7AFE-4907-81BC-53FF4635B92A.jpeg" alt="Food Image">
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        &copy; ST10517088 | Chips Waya Waya
+    </footer>
+
+</body>
+
+</html>

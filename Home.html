@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Waya Waya</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#f5deb3;
+        }
+
+        /* HEADER */
+
+        header{
+            background-color:#14532d;
+            padding:20px;
+            text-align:center;
+        }
+
+        .logo img{
+            width:90px;
+            height:80px;
+            border-radius:12px;
+            border:3px solid white;
+            margin-bottom:15px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        /* HERO SECTION */
+
+        .hero{
+            height:90vh;
+            background-image:url('Images/073334F6-7ECB-4FAC-95CD-A8E44C38F8E1.jpeg');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero-content{
+            background-color:rgba(0,0,0,0.6);
+            padding:40px;
+            border-radius:20px;
+            width:80%;
+        }
+
+        h1{
+            font-size:55px;
+            color:gold;
+            margin-bottom:20px;
+        }
+
+        h2{
+            font-size:30px;
+            color:#90ee90;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:20px;
+            line-height:1.6;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            background-color:gold;
+            color:black;
+            padding:15px 30px;
+            border:none;
+            border-radius:10px;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background-color:orange;
+            transform:scale(1.05);
+        }
+
+        /* MENU SECTION */
+
+        .menu-section{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .menu-section h2{
+            color:darkgreen;
+            margin-bottom:40px;
+        }
+
+        .menu-items{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background-color:white;
+            width:250px;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin:15px 0;
+            color:darkred;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background-color:#14532d;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:35px;
+            }
+
+            h2{
+                font-size:24px;
+            }
+
+            p{
+                font-size:18px;
+            }
+
+            .hero{
+                height:auto;
+                padding:60px 0;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="Images/7B88238C-96D8-4F66-98F6-1BE80C038338.jpeg" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Products.html">Products</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>CHIPS WAYA WAYA</h1>
+
+            <h2>THE HOME OF TASTY CHIPS & KOTAS</h2>
+
+            <p>
+                Welcome to Chips Waya Waya!  
+                We serve crispy chips, delicious kotas, burgers and tasty fast food.
+                Enjoy the best kasi flavour with every bite!
+            </p>
+
+            <button class="btn">Order Now</button>
+
+        </div>
+
+    </section>
+
+    <!-- MENU SECTION -->
+
+    <section class="menu-section">
+
+        <h2>Our Popular Meals</h2>
+
+        <div class="menu-items">
+
+            <div class="card">
+                <img src="Images/073334F6-7ECB-4FAC-95CD-A8E44C38F8E1.jpeg" alt="Chips">
+                <h3>Russian & Chips</h3>
+                <p>Crispy chips served with tasty russian sausage.</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/073334F6-7ECB-4FAC-95CD-A8E44C38F8E1.jpeg" alt="Kota">
+                <h3>Full Kota</h3>
+                <p>Loaded kota with polony, chips, cheese and sauces.</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/073334F6-7ECB-4FAC-95CD-A8E44C38F8E1.jpeg" alt="Burger">
+                <h3>Burger & Chips</h3>
+                <p>Juicy burger served with golden crispy chips.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        &copy; ST10517088 | Chips Waya Waya
+    </footer>
+
+</body>
+
+</html>
